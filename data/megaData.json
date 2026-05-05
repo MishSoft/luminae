@@ -1,0 +1,53 @@
+{
+  "megaMenu": [
+    {
+      "title": "woman",
+      "category": "woman"
+    },
+
+    {
+      "title": "male",
+      "category": "male"
+    },
+
+    {
+      "title": "mother-child",
+      "category": "mother-child"
+    },
+
+    {
+      "title": "home & furniture",
+      "category": "home & furniture"
+    },
+
+    {
+      "title": "super market",
+      "category": "super market"
+    },
+
+    {
+      "title": "cosmetics",
+      "category": "cosmetics"
+    },
+
+    {
+      "title": "shoe & bag",
+      "category": "shoe & bag"
+    },
+
+    {
+      "title": "electronic",
+      "category": "electronic"
+    },
+
+    {
+      "title": "sport & outdoor",
+      "category": "sport & outdoor"
+    },
+
+    {
+      "title": "best seller",
+      "category": "best seller"
+    }
+  ]
+}

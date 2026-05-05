@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
+  /* --- სისტემური ცვლადები --- */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #262626;
+  --black: #000000;
+
+  /* --- ძირითადი ფერები (Brand Colors) --- */
+  --primary: #4A72D4;
+  --secondary: #E11D48;
+  --accent-pink: #D4145A;
+  --accent-teal: #1B4D52;
+
+  /* --- ტექსტის ფერები --- */
+  --text-main: #1A1A1A;
+  --text-muted: #555555;
+  --text-on-dark: #FFFFFF;
+
+  /* --- ფონები (Backgrounds) --- */
+  --bg-main: #FFFFFF;
+  --bg-secondary: #F4F4F4;
+  --bg-footer: #D9E4EC;
+  --bg-promo-peach: #F5D5D0;
+
+  /* --- დეტალები --- */
+  --border-light: #D9D9D9;
+  --status-success: #22C55E;
+  --rating-star: #FBBF24;
+  --icon-muted: #C4C4C4;
 }
 
 @theme inline {
+  /* სისტემური */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --text-black: var(--black);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* ბრენდი */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent-pink: var(--accent-pink);
+  --color-accent-teal: var(--accent-teal);
+
+  /* ტექსტი */
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-on-dark: var(--text-on-dark);
+
+  /* ფონი */
+  --color-bg-main: var(--bg-main);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-footer: var(--bg-footer);
+  --color-bg-promo-peach: var(--bg-promo-peach);
+
+  /* დამხმარე */
+  --color-border-light: var(--border-light);
+  --color-status-success: var(--status-success);
+  --color-rating-star: var(--rating-star);
+  --color-icon-muted: var(--icon-muted);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato";
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding-inline: 90px;
+}
+
+
+
+@media (max-width:1085px) {
+  .container {
+    padding-inline: 50px;
+    /* background-color: red; */
+  }
+}
+
+
+@media (max-width:912px) {
+  .container {
+    padding-inline: 30px;
+  }
+}
+
+
+
+@media (max-width:478px) {
+  .container {
+    padding-inline: 32px;
+  }
 }

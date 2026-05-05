@@ -1,0 +1,10 @@
+import { iconType } from '@/types/iconTypes'
+import React from 'react'
+
+export default function ArrowIcon({className, color}: iconType) {
+  return (
+    <svg width="10" height="5" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
