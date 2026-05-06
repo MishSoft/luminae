@@ -10,23 +10,24 @@ import InstagramIcon from '../../ui/icons/InstagramIcon'
 import FacebookIcon from '../../ui/icons/FacebookIcon'
 import TelegramIcon from '../../ui/icons/TelegramIcon'
 import CardIcon from '../../ui/icons/CardIcon'
+import { Menu } from 'lucide-react'
+import { useSidebarStore } from '@/store/useNavBarStore'
 
 export default function MainHeader() {
+  const { openSidebar } = useSidebarStore()
   const dropDownOptions = megaData.megaMenu.map(item => ({
     title: item.title,
     category: item.category
   }))
   const [selectedCategory, setSelectedCategory] = useState<string>("")
   return (
-    <>
+    <div className='container py-7 flex flex-wrap xl:flex-nowrap shrink-0 items-center justify-between md:gap-4.25'>
       <div className='flex items-center gap-8 xl:gap-0  xl:max-w-138.5 w-full flex-col md:flex-row  justify-between xl:justify-start'>
         {/* Logo container */}
         <div className='flex items-center  justify-between w-full'>
-          <div className='w-7.5 flex md:hidden flex-col gap-1'>
-            <div className='w-full rounded-full h-1 bg-[#023047]'></div>
-            <div className='w-full rounded-full h-1 bg-[#023047]'></div>
-            <div className='w-full rounded-full h-1 bg-[#023047]'></div>
-          </div>
+          <button onClick={openSidebar} className='cursor-pointer md:hidden'>
+            <Menu />
+          </button>
           <Link href={'/'} className='flex   items-center gap-1.5 shrink-0'>
             <Image width={49} height={33} src='/assets/images/logo/Logo.svg' className='md:w-12.25 md:h-8.25 w-10 h-6.5' alt='Logo' aria-label='Luminae Logo' />
             <span className=' text-[32px] font-bold leading-5 not-italic'>
@@ -59,6 +60,6 @@ export default function MainHeader() {
         </div>
 
       </div>
-    </>
+    </div>
   )
 }

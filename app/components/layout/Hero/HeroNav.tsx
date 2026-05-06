@@ -1,80 +1,56 @@
 import Link from 'next/link';
+import Image from "next/image"
+import { categoryLinks } from '@/linksData/heroNavLinks';
 
-const categoryLinks = [
-  { id: 1,
-    label: "Woman",
-    slug: "womens-dresses",
-    categories: [
-      {
-        title: "shoes & bag",
-        links: [
-          {
-            label: "casual shoes",
-            link: "/casualshoes"
-          },
-          {
-            label: "boots",
-            link: "/boots"
-          },
-          {
-            label: "sandals",
-            link: "/sandals"
-          },
-          {
-            label: "slippers",
-            link: "/slippers"
-          }
-        ]
-      },
-
-      {
-        title: "home & textile",
-        links: [
-          {
-            label: "bedding",
-            link: "/bedding"
-          },
-          {
-            label: "pillows",
-            link: "/pillows"
-          },
-          {
-            label: "handkerchief towels",
-            link: "/towels"
-          },
-          {
-            label: "curtain",
-            link: "/curtain"
-          }
-        ]
-      }
-    ]
-  },
-  { id: 2, label: "Male", slug: "mens-shirts" },
-  { id: 3, label: "Mother-Child", slug: "baby-accessories" },
-  { id: 4, label: "Home & Furniture", slug: "furniture" },
-  { id: 5, label: "Super market", slug: "groceries" },
-  { id: 6, label: "Cosmetics", slug: "beauty" },
-  { id: 7, label: "Shoe & Bag", slug: "womens-shoes" },
-  { id: 8, label: "Electronic", slug: "laptops" },
-  { id: 9, label: "Sport & Outdoor", slug: "sports-accessories" },
-  { id: 10, label: "Best seller", slug: "tops" },
-];
 
 export default function HeroNav() {
   return (
-    <nav className='hidden md:block' >
-      <ul className='flex items-center  justify-between'>
-        {
-          categoryLinks.map(item => (
-            <li key={item.id} className='list-none'>
-              <Link href={'/'} className='hover:text-[#FF7A00] text-nowrap duration-200 text-[#555555] text-[12px] lg:text-[14px] leading-5 font-bold text-right'>
+    <nav className='hidden md:block '>
+      <ul className='flex items-center  py-4 justify-between relative'>
+        {categoryLinks.map((item) => {
+          return (
+            <li key={item.id} className='list-none group '>
+
+              <Link
+                href={'/'}
+                className='hover:text-[#FF7A00] text-nowrap duration-200 text-[#555555] text-[12px] lg:text-[14px] leading-5 font-bold'
+              >
                 {item.label}
               </Link>
+
+              {item.categories && (
+                <div className='hidden group-hover:flex gap-5 absolute top-10 left-0 bg-white rounded-lg px-6 py-8 z-50 '>
+                  <div className='grid grid-cols-4 items-start space-x-8 space-y-8'>
+                    {item.categories.map((category) => (
+                      <div
+                       
+                      key={category.title} className={`flex flex-col gap-4 min-w-45
+
+                        ${category.rowSpan ? `row-span-${category.rowSpan}` : ""}`}>
+                        <h3 className='text-[14px] font-bold leading-5 uppercase text-black'>
+                          {category.title}
+                        </h3>
+                        <div className='font-normal text-[14px] capitalize leading-5 text-[#555555] flex flex-col gap-2'>
+                          {category.links.map((link) => (
+                            <Link
+                              key={link.label}
+                              href={link.link}
+                              className="hover:text-[#FF7A00] transition-colors"
+                            >
+                              {link.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <Image width={100} height={100} className='max-w-69.5 w-full h-85 rounded-[10px] hidden xl:block' alt='' src={'/assets/images/category-image/image.png'} />
+                </div>
+              )}
             </li>
-          ))
-        }
+          );
+        })}
       </ul>
     </nav>
-  )
+  );
 }

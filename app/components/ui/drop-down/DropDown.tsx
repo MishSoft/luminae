@@ -40,7 +40,7 @@ export default function DropDown({ className, options, onSelect, placeholder, ic
 
       {
         isOpen && (
-          <ul className='absolute left-0 w-full p-5 bg-background border border-border-light rounded-md top-full'>
+          <ul className='absolute z-50 left-0 w-full p-5 bg-background border border-border-light rounded-md top-full'>
             {
               options.map(option => (
                 <li

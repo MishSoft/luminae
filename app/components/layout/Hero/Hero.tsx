@@ -1,12 +1,14 @@
 import React from 'react'
 import HeroNav from './HeroNav'
+import HeroBanner from './HeroBanner'
 
 export default function Hero() {
   return (
-    <section>
-      <div className="container pt-5">
+    <section className='flex items-center justify-center flex-col'>
+      <div className="container ">
         <HeroNav />
       </div>
+      <HeroBanner />
     </section>
   )
 }

@@ -66,9 +66,11 @@ body {
   font-family: "Lato";
 }
 
+summary::-webkit-details-marker { display: none; }
+
 
 .container {
-  max-width: 1440px;
+  max-width: 1940px;
   width: 100%;
   padding-inline: 90px;
 }

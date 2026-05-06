@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header/Header";
+import MobileSideBar from './components/ui/sidebar/MobileSideBar';
 
 
 
@@ -26,8 +27,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistLato.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="">
         <Header />
+        <MobileSideBar/>
         {children}</body>
     </html>
   );

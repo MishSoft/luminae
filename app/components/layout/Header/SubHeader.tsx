@@ -1,8 +1,7 @@
 "use client"
-import React, { useState } from 'react'
+import { useState } from 'react'
 import CategoryMenuIcon from '../../ui/icons/CategoryMenuIcon'
 import DropDown from '../../ui/drop-down/DropDown'
-import { Options } from '@/types/dropDownTypes'
 import HeaderPromo from './HeaderPromo'
 import HeaderUserSide from './HeaderUserSide'
 
@@ -40,7 +39,7 @@ export default function SubHeader() {
   const [selectValute, setSelectValute] = useState('USD')
   const [selectLang, setSelectLang] = useState('English')
   return (
-    <div className='bg-foreground w-full hidden md:block'>
+    <div className='bg-foreground w-full hidden md:flex items-center justify-center '>
       <div className="container flex py-2 items-center border justify-between">
         <div className='flex  items-center  gap-1 text-text-on-dark max-w-36 w-full'>
           <CategoryMenuIcon className={'text-text-on-dark w-6 h-6'} color={'#ffffff'}/>
@@ -52,7 +51,6 @@ export default function SubHeader() {
         </div>
 
         <HeaderPromo/>
-
         <HeaderUserSide/>
       </div>
     </div>
