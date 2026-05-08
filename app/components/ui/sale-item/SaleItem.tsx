@@ -3,7 +3,7 @@ import Image from "next/image"
 import RateIcon from '../icons/RateIcon'
 export default function SaleItem() {
   return (
-    <div className='flex flex-col w-full max-w-75 min-w-50 items-center rounded-lg shadow-[0_0_12px_0_rgba(0,0,0,0.1)]'>
+    <div className='flex flex-col w-full lg:max-w-75 min-w-80 sm:min-w-40 lg:min-w-50 items-center rounded-lg shadow-[0_0_12px_0_rgba(0,0,0,0.1)]'>
       <div className='flex flex-col py-4.25 px-7.5 items-center w-full'>
         <span className='font-extrabold text-[16px] leading-5 tracking-normal text-center flex items-center justify-center text-[#9D9D9D]'>Deal of the Day</span>
         <div className='flex items-center gap-2.5  text-[#C4C4C4]'>
@@ -30,11 +30,11 @@ export default function SaleItem() {
           <p className='text-[#555555] font-normal text-[12px] leading-5'>Women’s Powder sneakers</p>
           <div className='flex items-center gap-2'>
             <div className='flex items-center'>
-              <RateIcon />
-              <RateIcon />
-              <RateIcon />
-              <RateIcon />
-              <RateIcon />
+              <RateIcon className={''} />
+              <RateIcon className={''} />
+              <RateIcon className={''} />
+              <RateIcon className={''} />
+              <RateIcon className={''} />
             </div>
             <span>(54)</span>
           </div>

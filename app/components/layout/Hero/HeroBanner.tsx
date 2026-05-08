@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import DropboxIcon from '../../ui/icons/DropboxIcon'
+import Button from '../../ui/button/Button'
 export default function HeroBanner() {
   return (
     <div className='flex w-full h-115 relative'>
@@ -12,11 +13,7 @@ export default function HeroBanner() {
         <div className='absolute w-full flex items-center gap-8 justify-center flex-col h-full bg-[#4172DC]/50 left-0 z-40'>
           <span className='text-white font-bold text-[32px] uppercase leading-12.5'>Kimonos, Caftans & Pareos</span>
           <span className='text-white font-medium text-[28px] leading-12.5'>Poolside glam included From $4.99</span>
-
-          <button className='uppercase bg-[#4172DC] cursor-pointer justify-center text-white py-4 max-w-60.75 w-full rounded-md font-medium leading-5 text-[14px] flex items-center gap-2'>
-            <DropboxIcon className='text-white'/>
-            shop now
-          </button>
+          <Button className='uppercase bg-[#4172DC] cursor-pointer justify-center text-white py-4 max-w-60.75 w-full rounded-md font-medium leading-5 text-[14px] flex items-center gap-2' type="button" text='shop now' icon={<DropboxIcon className='text-white' />} />
         </div>
       </div>
 
