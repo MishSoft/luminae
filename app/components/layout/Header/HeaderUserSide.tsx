@@ -2,7 +2,7 @@ import Link from 'next/link'
 import UserIcon from '../../ui/icons/UserIcon'
 import HeartIcon from '../../ui/icons/HeartIcon'
 import CardIcon from '../../ui/icons/CardIcon'
-import Button from '../../ui/button/Button'
+import Button from '../../ui/button'
 
 export default function HeaderUserSide() {
   return (

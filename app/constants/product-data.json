@@ -1,0 +1,83 @@
+[
+  {
+    "sales": [
+     {
+      "id": 1,
+      "name": "Tonny Black",
+      "subName": "should bag-white-plain",
+      "rate": 54,
+      "price": 129.99,
+      "discount": 40,
+      "image": "/assets/images/sale-product/bag-white-plain.png",
+      "saleEndsAt": "2026-05-20T23:59:59Z",
+      "count": 5
+    },
+
+    {
+      "id": 2,
+      "name": "Reebok",
+      "subName": "Women’s Powder sneakers",
+      "rate": 60,
+      "price": 149.99,
+      "discount": 40,
+      "image": "/assets/images/sale-product/powder-sneakers.png",
+      "saleEndsAt": "2026-05-20T23:59:59Z",
+      "count": 4
+     },
+
+    {
+      "id": 3,
+      "name": "Patso",
+      "subName": "Shoulder bag-Pink-Plain",
+      "rate": 45,
+      "price": 139.00,
+      "discount": 40,
+      "image": "/assets/images/sale-product/bag-pink-plain.png",
+      "saleEndsAt": "2026-05-20T23:59:59Z",
+      "count": 5
+     },
+
+    {
+      "id": 4,
+      "name": "Sketcher",
+      "subName": "Sport-shoe 2102",
+      "rate": 55,
+      "price": 119.00,
+      "discount": 40,
+      "image": "/assets/images/sale-product/sport-shoe.png",
+      "saleEndsAt": "2026-05-20T23:59:59Z",
+      "count": 3
+     }
+    ]
+  },
+  {
+    "trending": [
+      {
+        "id": 1,
+        "name": "Cool & Sexy Calvin Klein",
+        "subName": "Dotted dress-Casual",
+        "price": 89,
+        "isNew": true,
+        "image": "/assets/images/trending-product/summer-outfit.jpg"
+      },
+
+       {
+        "id": 2,
+        "name": "Cool & Sexy Calvin Klein",
+        "subName": "Dotted dress-Casual",
+        "price": 89,
+        "isNew": false,
+        "image": "/assets/images/trending-product/spring-outfit.jpg"
+      },
+
+       {
+        "id": 3,
+        "name": "beige coat Zara",
+        "subName": "Cream-Brown-Formal",
+        "price": 102,
+        "isNew": true,
+        "image": "/assets/images/trending-product/auturm-outfit.jpg"
+      }
+    ]
+  }
+]

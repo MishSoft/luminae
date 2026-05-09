@@ -1,6 +1,6 @@
 import { Send } from 'lucide-react'
-import Button from '../../ui/button/Button'
-import InputContainer from '../../ui/input/InputContainer'
+import Button from '../../ui/button'
+import InputContainer from '../../ui/input'
 
 export default function NewsletterBox() {
   return (

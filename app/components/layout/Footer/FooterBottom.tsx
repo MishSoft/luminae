@@ -1,9 +1,9 @@
 "use client"
 import Image from 'next/image'
-import DropDown from '../../ui/drop-down/DropDown'
+import DropDown from '../../ui/drop-down'
 import { useLangStore } from '@/store/useLangStore';
 import { useState } from 'react';
-import langData from "@/data/langData.json"
+import langData from "@/app/constants/lang-data.json"
 import InstagramIcon from '../../ui/icons/InstagramIcon';
 import FacebookIcon from '../../ui/icons/FacebookIcon';
 import TelegramIcon from '../../ui/icons/TelegramIcon';

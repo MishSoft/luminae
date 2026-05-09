@@ -1,4 +1,4 @@
-import { footerNavLinks } from '@/linksData/footerNavLinks'
+import { footerNavLinks } from '@/app/constants/footer-nav-links'
 import Link from 'next/link'
 
 export default function FooterLinks() {

@@ -1,4 +1,4 @@
 export interface iconType {
-  className: string,
-  color: string
+  className?: string
+  color?: string
 }

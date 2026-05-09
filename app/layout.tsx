@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import Header from "./components/layout/Header/Header";
-import MobileSideBar from './components/ui/sidebar/MobileSideBar';
-import Footer from "./components/layout/Footer/Footer";
+import Header from "./components/layout/Header";
+import MobileSideBar from './components/ui/sidebar';
+import Footer from "./components/layout/Footer";
 
 
 
