@@ -56,7 +56,7 @@ export default function page() {
         <TopProdItem />
       </CollectionRow>
 
-      <CollectionRow className={''}>
+      <CollectionRow className={'hidden lg:block'}>
         <PromoBanner className={'bg-[#BF2E3B]'} image={'/assets/images/promo-image/promo1.png'} title={'Never-Ending Summer'} description={'Throwback Shirts & all-day dressed'} link={'/'} />
         <PromoBanner className={'bg-[#1D5159]'} image={'/assets/images/promo-image/promo1.png'} title={'Never-Ending Summer'} description={'Throwback Shirts & all-day dressed'} link={'/'} />
       </CollectionRow>
@@ -65,8 +65,8 @@ export default function page() {
         <FeatureItem title={'MagSafe'} description={'Snap on a magnetic case, wallet, or both. And get faster wireless charging.'} image={'/assets/images/feature-images/feature-img1.png'}/>
       </FeatureCarousel>
 
-      <CollectionRow className={''}>
-        <PromoBanner className={'bg-[#D11FB5]'} image={'/assets/images/promo-image/promo1.png'} title={'The Pinky Barbie Edition'} description={'Lets play dress up'} link={'/'} />
+      <CollectionRow className={'pb-20 hidden lg:block'}>
+        <PromoBanner className={'bg-[#D11FB5] '} image={'/assets/images/promo-image/promo1.png'} title={'The Pinky Barbie Edition'} description={'Lets play dress up'} link={'/'} />
         <PromoBanner className={'bg-[#0186C4]'} image={'/assets/images/promo-image/promo1.png'} title={'Best Sellers Everyone Love'} description={'poolside glam include'} link={'/'} />
       </CollectionRow>
     </main>

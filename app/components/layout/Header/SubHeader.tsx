@@ -4,6 +4,8 @@ import CategoryMenuIcon from '../../ui/icons/CategoryMenuIcon'
 import DropDown from '../../ui/drop-down/DropDown'
 import HeaderPromo from './HeaderPromo'
 import HeaderUserSide from './HeaderUserSide'
+import { useLangStore } from '@/store/useLangStore'
+import langData from "@/data/langData.json"
 
 const valute = [
   {
@@ -23,21 +25,12 @@ const valute = [
 ]
 
 
-const languages = [
-  {
-    title: "english",
-    category: "eng"
-  },
-
-  {
-    title: "georgian",
-    category: "geo"
-  }
-]
 
 export default function SubHeader() {
   const [selectValute, setSelectValute] = useState('USD')
   const [selectLang, setSelectLang] = useState('English')
+  const currentLang = useLangStore((state) => state.currentLang);
+  const setLanguage = useLangStore((state) => state.setLanguage);
   return (
     <div className='bg-foreground w-full hidden md:flex items-center justify-center '>
       <div className="container flex py-2 items-center border justify-between">
@@ -46,8 +39,8 @@ export default function SubHeader() {
           <span className='capitalize text-[20px] leading-5 font-bold'>categories</span>
         </div>
         <div className='relative ml-16 xl:mr-18 xl:ml-auto flex items-center mt-1 max-w-36 w-full justify-end gap-6.5'>
-          <DropDown options={valute} onSelect={(option) => setSelectValute(option.category as string)} className='text-white text-[12px]' placeholder={selectValute} iconClassName={'w-[10px] h-[5px] '} iconColor={'white'}/>
-          <DropDown options={languages} onSelect={(option) => setSelectLang(option.category)} className='text-white text-[12px]' placeholder={selectLang} iconClassName={'w-[10px] h-[5px]'} iconColor={'white'} />
+          <DropDown options={valute} onSelect={(option) => setSelectValute(option.category as string)} className='text-white text-[12px]' placeholder={selectValute} iconClassName={'w-[10px] h-[5px] '} iconColor={'white'} dropDownClassName='top-full'/>
+          <DropDown options={langData} onSelect={(option) => setSelectLang(option.category as string)} className='text-white text-[12px]' placeholder={currentLang === 'eng' ? 'English' : 'Georgian'} iconClassName={'w-[10px] h-[5px]'} iconColor={'white'} dropDownClassName='top-full' />
         </div>
 
         <HeaderPromo/>

@@ -10,4 +10,5 @@ export interface DropDownProps {
   className?: string
   iconClassName: string
   iconColor: string
+  dropDownClassName: string
 }

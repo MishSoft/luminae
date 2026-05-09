@@ -1,9 +1,11 @@
+import FooterBottom from './FooterBottom'
 import MainFooter from './MainFooter'
 
 export default function Footer() {
   return (
-    <footer className='pt-21.75 relative bg-white'>
+    <footer className='py-6 relative bg-white'>
       <MainFooter/>
+      <FooterBottom/>
     </footer>
   )
 }

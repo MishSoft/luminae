@@ -3,7 +3,7 @@ import { DropDownProps, Options } from '@/types/dropDownTypes'
 import  {  useEffect, useRef, useState } from 'react'
 import ArrowIcon from '../icons/ArrowIcon'
 
-export default function DropDown({ className, options, onSelect, placeholder, iconClassName, iconColor }: DropDownProps) {
+export default function DropDown({ className, options, onSelect, placeholder, iconClassName, iconColor, dropDownClassName }: DropDownProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [selected, setSelected] = useState<Options | null>(null)
   const menuRef = useRef<HTMLDivElement>(null)
@@ -40,7 +40,7 @@ export default function DropDown({ className, options, onSelect, placeholder, ic
 
       {
         isOpen && (
-          <ul className='absolute z-50 left-0 w-full p-5 bg-background border border-border-light rounded-md top-full'>
+          <ul className={`absolute z-50 left-0 w-full p-5 bg-background border border-border-light rounded-md  ${dropDownClassName}`}>
             {
               options.map(option => (
                 <li
@@ -58,3 +58,5 @@ export default function DropDown({ className, options, onSelect, placeholder, ic
     </div>
   )
 }
+
+// -top-32

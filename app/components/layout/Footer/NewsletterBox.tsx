@@ -4,7 +4,7 @@ import InputContainer from '../../ui/input/InputContainer'
 
 export default function NewsletterBox() {
   return (
-    <div className='absolute max-w-142.75 bg-[#7296AB]  gap-6 flex flex-col items-center rounded-lg py-8 px-14 w-full top-0 left-[50%] translate-x-[-50%]'>
+    <div className='absolute hidden  max-w-142.75 bg-[#7296AB]  gap-6 md:flex flex-col items-center rounded-lg py-8 px-14 w-full -top-16 left-[50%] translate-x-[-50%]'>
       <div className='flex flex-col gap-5 items-center'>
         <span className='flex  text-[#FFFFFF] capitalize items-center gap-1 font-bold text-[32px] leading-5'>
           luminae
