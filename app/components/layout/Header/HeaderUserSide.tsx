@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link'
 import UserIcon from '../../ui/icons/UserIcon'
 import HeartIcon from '../../ui/icons/HeartIcon'
@@ -12,12 +13,13 @@ export default function HeaderUserSide() {
         Sign in
       </Link>
 
-      <Button type={"button"} text='Favorites' icon={<HeartIcon className={'w-6 h-6  group-hover:fill-white/50 transition-all duration-200 ease-in-out'} color={'white'} />} className='bg-transparent cursor-pointer group text-white flex items-center gap-1 text-nowrap text-[14px] font-normal leading-5 outline-none border-none' />
+      <Button type={"button"} text="Favorites" icon={<HeartIcon className={'w-6 h-6  group-hover:fill-white/50 transition-all duration-200 ease-in-out'} color={'white'} />} className='bg-transparent cursor-pointer group text-white flex items-center gap-1 text-nowrap text-[14px] font-normal leading-5 outline-none border-none' />
 
       <div className='flex items-center gap-2'>
-        <Button className='bg-transparent text-white group cursor-pointer flex items-center gap-1 text-nowrap text-[14px] font-normal leading-5 outline-none border-none' type={"button"} text='Card' icon={<CardIcon className={'w-6 h-6 group-hover:fill-white/50 transition-all duration-200 ease-in-out'} color={'white'} />} />
+        <Button className='bg-transparent text-white group cursor-pointer flex items-center gap-1 text-nowrap text-[14px] font-normal leading-5 outline-none border-none' type={"button"} text="Cart" icon={<CardIcon className={'w-6 h-6 group-hover:fill-white/50 transition-all duration-200 ease-in-out'} color={'white'} />} />
         <span className='bg-green-600 rounded-full flex items-center justify-center text-white w-6 h-5.75'>3</span>
       </div>
     </div>
   )
 }
+

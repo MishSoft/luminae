@@ -26,7 +26,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/slippers",
           },
         ],
-        rowSpan: 1,
+        colStart: 1,
       },
 
       {
@@ -49,7 +49,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/curtain",
           },
         ],
-        rowSpan: 1,
+        colStart: 2,
       },
 
       {
@@ -74,7 +74,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/wedding",
           },
         ],
-        rowSpan: 4, // 2
+        colStart: 3,
       },
 
       {
@@ -127,8 +127,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/fall wardrobe",
           },
         ],
-        rowSpan: 3,
-        // rowStart: 2
+        colStart: 4,
       },
 
       {
@@ -154,8 +153,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/shower-caps",
           },
         ],
-        rowSpan: 4, // 3
-        rowStart: 1,
+        colStart: 1,
       },
 
       {
@@ -181,8 +179,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/men-grooming",
           },
         ],
-        rowSpan: 3,
-
+        colStart: 2,
       },
 
       {
@@ -208,7 +205,7 @@ export const categoryLinks: CategoryProps[] = [
             link: "/fitness-equipment",
           },
         ],
-        rowSpan: 3,
+        colStart: 3,
       },
     ],
   },

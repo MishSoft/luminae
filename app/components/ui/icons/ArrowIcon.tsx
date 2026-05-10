@@ -1,5 +1,4 @@
 import { iconType } from '@/types/iconTypes'
-import React from 'react'
 
 export default function ArrowIcon({className, color}: iconType) {
   return (

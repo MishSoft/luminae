@@ -3,10 +3,12 @@ export interface PropsDataProps {
   name: string;
   subName: string;
   rate?: number;
-  price: number;
+  price?: number;
   discount?: number;
   image: string;
   saleEndsAt?: string;
   count?: number;
   isNew?: boolean;
+  bg_color?: string
+  link?: string
 }

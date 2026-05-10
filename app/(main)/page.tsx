@@ -7,15 +7,22 @@ import TopProdSection from '../components/features/products/TopProdSection'
 import prodData from "@/app/constants/product-data.json"
 
 export default function page() {
+  const promoObject = prodData.find(item => item.promo);
+  const salesData = prodData.find(d => d.sales)?.sales || []
+  const trendingData = prodData.find(d => d.trending)?.trending || []
+  const topData = prodData.find(d => d.top)?.top || []
+  const firstSectionData = promoObject?.promo?.slice(0, 2) || [];
+  const secondSectionData = promoObject?.promo?.slice(2, 4) || [];
+
   return (
     <main>
       <Hero />
-      <SaleSection data={prodData[0]?.sales || []} />
-      <TrendingSection />
-      <TopProdSection />
-      <PromoBannerSection />
+      <SaleSection data={salesData} />
+      <TrendingSection data={trendingData} />
+      <TopProdSection data={topData} />
+      <PromoBannerSection data={firstSectionData} />
       <FeatureItemSection />
-      <PromoBannerSection />
+      <PromoBannerSection data={secondSectionData} />
     </main>
   )
 }

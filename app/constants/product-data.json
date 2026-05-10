@@ -1,53 +1,53 @@
 [
   {
     "sales": [
-     {
-      "id": 1,
-      "name": "Tonny Black",
-      "subName": "should bag-white-plain",
-      "rate": 54,
-      "price": 129.99,
-      "discount": 40,
-      "image": "/assets/images/sale-product/bag-white-plain.png",
-      "saleEndsAt": "2026-05-20T23:59:59Z",
-      "count": 5
-    },
+      {
+        "id": 1,
+        "name": "Tonny Black",
+        "subName": "should bag-white-plain",
+        "rate": 54,
+        "price": 129.99,
+        "discount": 40,
+        "image": "/assets/images/sale-product/bag-white-plain.png",
+        "saleEndsAt": "2026-05-20T23:59:59Z",
+        "count": 5
+      },
 
-    {
-      "id": 2,
-      "name": "Reebok",
-      "subName": "Women’s Powder sneakers",
-      "rate": 60,
-      "price": 149.99,
-      "discount": 40,
-      "image": "/assets/images/sale-product/powder-sneakers.png",
-      "saleEndsAt": "2026-05-20T23:59:59Z",
-      "count": 4
-     },
+      {
+        "id": 2,
+        "name": "Reebok",
+        "subName": "Women’s Powder sneakers",
+        "rate": 60,
+        "price": 149.99,
+        "discount": 40,
+        "image": "/assets/images/sale-product/powder-sneakers.png",
+        "saleEndsAt": "2026-05-20T23:59:59Z",
+        "count": 4
+      },
 
-    {
-      "id": 3,
-      "name": "Patso",
-      "subName": "Shoulder bag-Pink-Plain",
-      "rate": 45,
-      "price": 139.00,
-      "discount": 40,
-      "image": "/assets/images/sale-product/bag-pink-plain.png",
-      "saleEndsAt": "2026-05-20T23:59:59Z",
-      "count": 5
-     },
+      {
+        "id": 3,
+        "name": "Patso",
+        "subName": "Shoulder bag-Pink-Plain",
+        "rate": 45,
+        "price": 139.0,
+        "discount": 40,
+        "image": "/assets/images/sale-product/bag-pink-plain.png",
+        "saleEndsAt": "2026-05-20T23:59:59Z",
+        "count": 5
+      },
 
-    {
-      "id": 4,
-      "name": "Sketcher",
-      "subName": "Sport-shoe 2102",
-      "rate": 55,
-      "price": 119.00,
-      "discount": 40,
-      "image": "/assets/images/sale-product/sport-shoe.png",
-      "saleEndsAt": "2026-05-20T23:59:59Z",
-      "count": 3
-     }
+      {
+        "id": 4,
+        "name": "Sketcher",
+        "subName": "Sport-shoe 2102",
+        "rate": 55,
+        "price": 119.0,
+        "discount": 40,
+        "image": "/assets/images/sale-product/sport-shoe.png",
+        "saleEndsAt": "2026-05-20T23:59:59Z",
+        "count": 3
+      }
     ]
   },
   {
@@ -61,7 +61,7 @@
         "image": "/assets/images/trending-product/summer-outfit.jpg"
       },
 
-       {
+      {
         "id": 2,
         "name": "Cool & Sexy Calvin Klein",
         "subName": "Dotted dress-Casual",
@@ -70,7 +70,7 @@
         "image": "/assets/images/trending-product/spring-outfit.jpg"
       },
 
-       {
+      {
         "id": 3,
         "name": "beige coat Zara",
         "subName": "Cream-Brown-Formal",
@@ -79,5 +79,92 @@
         "image": "/assets/images/trending-product/auturm-outfit.jpg"
       }
     ]
+  },
+
+  {
+    "top": [
+      {
+        "id": 1,
+        "name": "mango",
+        "subName": "Kimono & Caftan - Black - Regular fit",
+        "rate": 289,
+        "price": 290,
+        "discount": 10,
+        "image": "/assets/images/top-product/mango.jpg",
+        "count": 5
+      },
+
+      {
+        "id": 2,
+        "name": "zara",
+        "subName": "Midi top- Daily fit",
+        "rate": 523,
+        "price": 145,
+        "discount": 7,
+        "image": "/assets/images/top-product/zara.jpg",
+        "count": 5
+      },
+
+      {
+        "id": 3,
+        "name": "Uniqlo",
+        "subName": "Midi atlas Slim fit - bohemian",
+        "rate": 86,
+        "price": 156,
+        "discount": 8,
+        "image": "/assets/images/top-product/uniqlo.jpg",
+        "count": 4
+      },
+      {
+        "id": 4,
+        "name": "Mango dress",
+        "subName": "Kimono & Caftan - Colorful - Night club fit",
+        "rate": 121,
+        "price": 487,
+        "discount": 15,
+        "image": "/assets/images/top-product/mango-dress.jpg",
+        "count": 5
+      }
+    ]
+  },
+
+   {
+    "promo": [
+      {
+        "id": 1,
+        "name": "Never-Ending Summer",
+        "subName": "Throwback Shirts & all-day dressed",
+        "bg_color": "#BF2E3B",
+        "image": "/assets/images/promo-image/ending-summer.png",
+        "link": "/"
+      },
+
+      {
+        "id": 2,
+        "name": "The most famous sport brands",
+        "subName": "Get in gym essentials",
+        "bg_color": "#1D5159",
+        "image": "/assets/images/promo-image/sport-brands.png",
+        "link": "/"
+      },
+
+      {
+        "id": 3,
+         "name": "The Pinky Barbie Edition",
+        "subName": "Lets play dress up",
+        "bg_color": "#D11FB5",
+        "image": "/assets/images/promo-image/promo2.jpg",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "name": "Best Sellers Everyone Love",
+        "subName": "poolside glam include",
+        "bg_color": "#0186C4",
+        "image": "/assets/images/promo-image/best-sellers.jpg",
+        "link": "/"
+      }
+    ]
   }
+
 ]

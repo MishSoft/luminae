@@ -10,8 +10,8 @@ export default function FeatureItem({ title, description, image }: FeatureItemPr
   return (
     <div className=' flex items-center justify-center '>
       <div className='flex flex-col gap-4 '>
-        <h2 className='font-bold text-[20px] leading-5 tracking-wider uppercase text-[#465D6B]'>{title}</h2>
-        <p className='text-[#555555] font-medium max-w-123.25 text-[20px] leading-7'>
+        <h2 className='font-bold text-[20px] leading-5 tracking-wider uppercase text-text-feature'>{title}</h2>
+        <p className='text-text-muted font-medium max-w-123.25 text-[20px] leading-7'>
           {description}
         </p>
       </div>

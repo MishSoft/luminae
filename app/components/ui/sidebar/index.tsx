@@ -21,11 +21,11 @@ export default function MobileSideBar() {
         <button onClick={closeSidebar} className="absolute left-5 cursor-pointer p-1">
           <X size={24} />
         </button>
-        <span className="text-[20px] font-bold capitalize">menu</span>
+        <span className="text-[20px] font-bold capitalize">Menu</span>
       </div>
 
       {/* Categories List */}
-      <div className="bg-[#F5F5F5] h-[calc(100%-65px)] overflow-y-auto">
+      <div className="bg-bg-sidebar h-[calc(100%-65px)] overflow-y-auto">
         <div className="container flex flex-col py-4">
           {categoryLinks.map((link) => (
             <details onClick={(event: MouseEvent) => {
@@ -41,10 +41,6 @@ export default function MobileSideBar() {
                   {link.categories.map((category) => (
                     <div
                       key={category.title}
-                      className={`
-                        row-span-${category.rowSpan}
-                        row-start-${category.rowStart}
-                        `}
                     >
                       <h3 className="font-bold uppercase text-[13px] text-black mb-2 tracking-wider">
                         {category.title}
@@ -54,7 +50,7 @@ export default function MobileSideBar() {
                           <Link
                             key={subLink.label}
                             href={subLink.link}
-                            className="text-[#555555] hover:text-orange-400 text-[14px] py-1"
+                            className="text-text-muted hover:text-accent-orange text-[14px] py-1"
                           >
                             {subLink.label}
                           </Link>
@@ -74,7 +70,7 @@ export default function MobileSideBar() {
               links.map(link => (
                 <Link href={link.link} key={link.id} className='flex items-center justify-between hover:text-black'>
                   {link.label}
-                  <ChevronRight className='text-[#434343]' size={15} />
+                  <ChevronRight className='text-icon-dark' size={15} />
                 </Link>
               ))
             }
