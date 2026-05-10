@@ -9,7 +9,7 @@ export default function Logo() {
   const { openSidebar } = useSidebarStore()
 
   return (
-    <div className='flex items-center  justify-between w-full' >
+    <div className='flex items-center w-full justify-between ' >
       <Button type='button' icon={<Menu />} handleClick={openSidebar} className='cursor-pointer md:hidden' />
       <Link href={'/'} className='flex   items-center gap-1.5 shrink-0'>
         <Image width={49} height={33} src='/assets/images/logo/Logo.svg' className='md:w-12.25 md:h-8.25 w-10 h-6.5' alt='Logo' aria-label='Luminae Logo' />
